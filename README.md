@@ -23,24 +23,10 @@ Personal portfolio website showcasing my projects & skills built with modern web
 
 ## 🔧 Installation
 
-\`\`\`bash
-
-# Clone repository
-
-git clone https://github.com/yourusername/portfolio-website.git
-
-# Navigate to project directory
-
-cd portfolio-website
-
-# Install dependencies
-
-npm install
-
-# Run development server
-
-npm run dev
-\`\`\`
+1. Clone repository `git clone https://github.com/ilhardika/my-portfolio.git`
+2. Navigate to project directory `cd portfolio-website`
+3. Install dependencies `npm install`
+4. Run development server `npm run dev`
 
 ## 🌟 Key Components
 
