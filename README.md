@@ -1,5 +1,3 @@
-cat > README.md << EOL
-
 # Personal Portfolio Website
 
 ## 🚀 Project Overview
