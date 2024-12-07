@@ -1,0 +1,31 @@
+.navbar {
+  @apply fixed top-0 z-0 flex w-full items-center justify-between border-b border-b-gray-700 bg-black/70 px-16 py-6 text-white backdrop-blur-md md:justify-evenly;
+}
+
+.navbar-logo {
+  @apply bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent text-3xl font-semibold;
+}
+
+.navbar-nav {
+  @apply hidden gap-10 md:flex;
+}
+
+.navbar-social {
+  @apply hidden gap-5 md:flex;
+}
+
+.navbar-menu-icon {
+  @apply text-4xl;
+}
+
+.navbar-mobile-menu {
+  @apply fixed right-0 top-[84px] flex h-screen w-1/2 flex-col items-start justify-start gap-10 border-2 border-gray-800 bg-black/90 p-12;
+}
+
+.navbar-mobile-nav {
+  @apply flex flex-col gap-8 mb-8;
+}
+
+.navbar-mobile-social {
+  @apply flex flex-wrap gap-5;
+}

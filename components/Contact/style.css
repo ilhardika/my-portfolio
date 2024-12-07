@@ -1,0 +1,27 @@
+.contact-container {
+  @apply flex min-h-[70vh] min-w-full items-center justify-center;
+}
+
+.contact-content {
+  @apply flex flex-col items-center justify-center gap-3 space-y-6 p-14;
+}
+
+.contact-heading {
+  @apply text-center text-5xl md:text-7xl;
+}
+
+.contact-gradient-text {
+  @apply bg-gradient-to-r to-blue-500 from-pink-500 bg-clip-text text-transparent;
+}
+
+.contact-paragraph {
+  @apply text-center text-lg font-semibold text-gray-500;
+}
+
+.contact-social-container {
+  @apply flex items-center justify-center gap-10 text-gray-300;
+}
+
+.contact-social-icon {
+  @apply text-5xl cursor-pointer transition-all duration-300 hover:scale-110;
+}

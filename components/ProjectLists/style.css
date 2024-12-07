@@ -1,0 +1,31 @@
+.project-card {
+  @apply flex flex-col items-center lg:flex-row md:gap-24;
+}
+
+.project-image {
+  @apply w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 lg:w-[350px];
+}
+
+.project-content {
+  @apply flex flex-col justify-center;
+}
+
+.project-info {
+  @apply flex flex-col gap-5;
+}
+
+.project-title {
+  @apply text-2xl text-white font-semibold;
+}
+
+.project-description {
+  @apply text-gray-400;
+}
+
+.project-tech-stack {
+  @apply flex flex-wrap gap-5;
+}
+
+.project-tech-badge {
+  @apply rounded-lg bg-slate-900 p-3 text-white text-sm;
+}

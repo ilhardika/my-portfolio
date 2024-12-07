@@ -1,0 +1,27 @@
+.hero-container {
+  @apply px-16 flex min-h-screen w-full items-center justify-center py-28 md:px-32;
+}
+
+.hero-content {
+  @apply flex flex-col items-center justify-center gap-10 text-white;
+}
+
+.hero-image {
+  @apply w-[300px] cursor-pointer rounded-full shadow-xl shadow-indigo-900 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600 md:w-[350px];
+}
+
+.hero-text-container {
+  @apply flex max-w-[600px] flex-col items-center justify-center gap-3 text-center;
+}
+
+.hero-title {
+  @apply bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-5xl font-light md:text-7xl;
+}
+
+.hero-subtitle {
+  @apply bg-gradient-to-r to-blue-500 from-purple-500 bg-clip-text text-transparent text-2xl font-light md:text-3xl;
+}
+
+.hero-description {
+  @apply md:text-base text-pretty text-sm text-gray-400;
+}
