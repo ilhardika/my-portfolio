@@ -25,7 +25,7 @@ const Hero = () => {
           <p className="hero-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             consectetur odio rerum, quisquam, ut facilis velit atque eligendi
-            veniam, asperiores expedita tempore fugit beatae temporibus!
+            veniam,
           </p>
         </motion.div>
       </div>
