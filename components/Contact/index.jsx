@@ -14,7 +14,8 @@ const Contact = () => {
           <span className="contact-gradient-text">Get in touch</span>
         </h1>
         <p className="contact-paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, qui?
+          Feel free to reach out if you have any questions or would like to
+          connect!
         </p>
 
         <div className="contact-social-container">

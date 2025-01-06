@@ -23,9 +23,10 @@ const Hero = () => {
           <h1 className="hero-title">Ilham Hardika</h1>
           <h3 className="hero-subtitle">Front End Developer</h3>
           <p className="hero-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            consectetur odio rerum, quisquam, ut facilis velit atque eligendi
-            veniam,
+            A Frontend Developer and former QA Tester with 2 years of experience
+            at Allianz Life Indonesia, transitioning into development with a
+            strong foundation in React, aiming to create user-friendly web
+            applications.
           </p>
         </motion.div>
       </div>

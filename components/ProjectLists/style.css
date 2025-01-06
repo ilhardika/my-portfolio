@@ -1,5 +1,5 @@
 .project-card {
-  @apply flex flex-col items-center lg:flex-row md:gap-24;
+  @apply flex flex-col items-center lg:flex-row;
 }
 
 .project-image {
@@ -15,7 +15,7 @@
 }
 
 .project-title {
-  @apply text-2xl text-white font-semibold;
+  @apply text-2xl text-white font-semibold mt-5 lg:mt-0;
 }
 
 .project-description {
