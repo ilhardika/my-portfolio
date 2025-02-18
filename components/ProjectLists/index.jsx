@@ -9,36 +9,38 @@ const ProjectLists = ({ projects = ProjectList }) => {
       {projects.map((item, index) => (
         <ScrollReveal key={item.id}>
           <div
-            className={`project-card group ${
+            className={`project-card group md:${
               index % 2 === 0 ? "flex-row" : "flex-row-reverse"
             }`}
           >
-            <div className="project-image-container">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="project-image"
-              />
-              <div className="project-overlay">
-                <div className="project-links">
-                  <a
-                    href={item.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-link-btn"
-                  >
-                    <FiGithub size={20} />
-                    <span>Code</span>
-                  </a>
-                  <a
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-link-btn"
-                  >
-                    <FiExternalLink size={20} />
-                    <span>Preview</span>
-                  </a>
+            <div className="project-image-wrapper">
+              <div className="project-image-container">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="project-image"
+                />
+                <div className="project-overlay">
+                  <div className="project-links">
+                    <a
+                      href={item.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link-btn"
+                    >
+                      <FiGithub size={20} />
+                      <span>Code</span>
+                    </a>
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link-btn"
+                    >
+                      <FiExternalLink size={20} />
+                      <span>Preview</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
