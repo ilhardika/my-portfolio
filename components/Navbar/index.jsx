@@ -48,7 +48,7 @@ const Navbar = () => {
             <NavItems navItems={navItemsList} />
           </ul>
 
-          <ul className="navbar-social hidden gap-5 md:flex">
+          <ul className="navbar-social flex gap-5">
             <SocialIcons socialItems={filteredSocialList} />
           </ul>
         </div>

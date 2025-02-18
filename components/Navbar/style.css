@@ -1,5 +1,5 @@
 .navbar {
-  @apply fixed top-0 z-0 flex w-full items-center justify-between border-b border-b-gray-700 bg-black/70 px-16 py-6 text-white backdrop-blur-md md:justify-evenly;
+  @apply fixed top-0 z-50 flex w-full items-center justify-between border-b border-b-gray-700 bg-black/70 px-16 py-6 text-white backdrop-blur-md md:justify-evenly;
 }
 
 .navbar-logo {
