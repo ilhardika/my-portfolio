@@ -1,11 +1,12 @@
 .project-container {
-  @apply flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px-14 md:py-24;
+  @apply max-w-7xl mx-auto px-4 py-16;
 }
 
 .project-header {
-  @apply text-4xl font-light text-white md:text-6xl;
+  @apply text-3xl md:text-4xl font-bold text-center mb-16
+  bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
 }
 
 .project-list-container {
-  @apply flex w-full max-w-[1000px] flex-col gap-16 text-white;
+  @apply space-y-16;
 }

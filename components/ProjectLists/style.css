@@ -1,13 +1,40 @@
 .project-card {
-  @apply flex flex-col items-center lg:flex-row;
+  @apply flex gap-8 mb-16 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg 
+  transition-all duration-300 hover:shadow-xl;
+}
+
+.project-image-container {
+  @apply relative w-1/2 overflow-hidden;
 }
 
 .project-image {
-  @apply w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 lg:w-[350px];
+  @apply w-full h-[400px] object-cover transition-transform duration-300;
+}
+
+.project-card:hover .project-image {
+  @apply transform scale-105;
+}
+
+.project-overlay {
+  @apply absolute inset-0 bg-black bg-opacity-70 opacity-0 transition-opacity duration-300 
+  flex items-center justify-center;
+}
+
+.project-card:hover .project-overlay {
+  @apply opacity-100;
+}
+
+.project-links {
+  @apply flex gap-4;
+}
+
+.project-link-btn {
+  @apply flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 backdrop-blur-sm
+  text-white hover:bg-white/20 transition-all duration-300;
 }
 
 .project-content {
-  @apply flex flex-col justify-center;
+  @apply w-1/2 p-8 flex flex-col justify-center;
 }
 
 .project-info {
@@ -15,17 +42,33 @@
 }
 
 .project-title {
-  @apply text-2xl text-white font-semibold mt-5 lg:mt-0;
+  @apply text-2xl font-bold text-gray-800 dark:text-white mb-4;
 }
 
 .project-description {
-  @apply text-gray-400;
+  @apply text-gray-600 dark:text-gray-300 mb-6;
 }
 
 .project-tech-stack {
-  @apply flex flex-wrap gap-5;
+  @apply flex flex-wrap gap-2;
 }
 
 .project-tech-badge {
-  @apply rounded-lg bg-slate-900 p-3 text-white text-sm;
+  @apply px-4 py-2 text-sm font-medium rounded-full
+  bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    @apply flex-col;
+  }
+
+  .project-image-container,
+  .project-content {
+    @apply w-full;
+  }
+
+  .project-image {
+    @apply h-[250px];
+  }
 }
