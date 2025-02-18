@@ -3,7 +3,6 @@ import { FaCss3Alt } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
-import { TbBrandVite } from "react-icons/tb";
 
 export const TechList = [
   {
@@ -30,10 +29,5 @@ export const TechList = [
     id: 5,
     icon: FaReact,
     color: "text-blue-500",
-  },
-  {
-    id: 6,
-    icon: TbBrandVite,
-    color: "text-purple-700",
   },
 ];
