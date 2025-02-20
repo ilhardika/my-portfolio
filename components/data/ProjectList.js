@@ -2,6 +2,7 @@ import coverLP from "~/cover-lp-tech.svg";
 import coverBlog from "~/cover-blog.png";
 import coverMovie from "~/cover-movie-list.png";
 import coverTravapp from "~/cover-travapp.png";
+import coverRanduser from "~/cover-rand-user.png";
 
 export const ProjectList = [
   {
@@ -21,6 +22,15 @@ export const ProjectList = [
     tech: ["HTML", "Bootstrap", "React"],
     link: "https://movie-lists-project.vercel.app/",
     github: "https://github.com/ilhardika/Movie-List",
+  },
+  {
+    id: 5,
+    image: coverRanduser,
+    title: "User List",
+    desc: "A modern React application that displays and manages user data from the Random User API. Built with React, Bootstrap, and Vite. with Search, Sort, Filter, View maps & User Detail features.",
+    tech: ["HTML", "Tailwind", "React"],
+    link: "https://rand-users.vercel.app/",
+    github: "https://github.com/ilhardika/user-list",
   },
   {
     id: 1,
