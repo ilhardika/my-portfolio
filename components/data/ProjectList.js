@@ -28,7 +28,7 @@ export const ProjectList = [
     title: "Compressly",
     desc: "A SAAS web application built with React and Vite that allows users to compress images. Built with React, Bootstrap, and Vite. with Image Preview, Compress, Download, and Share features.",
     tech: ["HTML", "Bootstrap", "Next.js"],
-    link: "https://compressly.vercel.app/",
+    link: "https://compressly-web.vercel.app/",
     github: "https://github.com/ilhardika/compressly",
   },
   {
