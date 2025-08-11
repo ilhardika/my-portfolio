@@ -1,8 +1,8 @@
 import coverMovie from "~/cover-movie-list.png";
 import coverTravapp from "~/cover-travapp.png";
-import coverRanduser from "~/cover-rand-user.png";
 import coverCompressly from "~/cover-compressly.png";
 import coverLp from "~/cover-lp.png";
+import coverErp from "~/cover-erp.png";
 
 const projects = [
   {
@@ -12,6 +12,14 @@ const projects = [
     tech: ["HTML", "Tailwind", "React.js"],
     link: "https://travapp.vercel.app/",
     github: "https://github.com/ilhardika/travel-web-app",
+  },
+  {
+    image: coverErp,
+    title: "Erp",
+    desc: "a unified ERP and POS solution that streamlines business operations through a single, intuitive dashboard. Built with modern web technologies, it offers role-based access control and comprehensive business management features.",
+    tech: ["Tailwind", "Next.js", "NeonDB"],
+    link: "https://erpindo  .vercel.app/",
+    github: "https://github.com/ilhardika/erp",
   },
   {
     image: coverCompressly,
@@ -36,14 +44,6 @@ const projects = [
     tech: ["HTML", "Tailwind", "React.js"],
     link: "https://momenic.vercel.app/",
     github: "https://github.com/ilhardika/momenic",
-  },
-  {
-    image: coverRanduser,
-    title: "User Lists",
-    desc: "A modern React application that displays and manages user data from the Random User API. Built with React, Bootstrap, and Vite. with Search, Sort, Filter, View maps & User Detail features.",
-    tech: ["HTML", "Tailwind", "React.js"],
-    link: "https://rand-users.vercel.app/",
-    github: "https://github.com/ilhardika/user-list",
   },
 ];
 
