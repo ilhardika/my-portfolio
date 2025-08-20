@@ -21,9 +21,11 @@ const Hero = () => {
           className="hero-text-container"
         >
           <h1 className="hero-title">Ilham Hardika</h1>
-          <h3 className="hero-subtitle">Front End Developer</h3>
+          <h3 className="hero-subtitle">Front-end | Quality Assurance</h3>
           <p className="hero-description">
-            A Frontend Developer with a strong foundation in React, aiming to create user-friendly web applications. Former QA Tester with 2 years of experience at Allianz Life Indonesia.
+            QA Tester with 2 years of experience at Allianz, ensuring
+            high-quality mobile and web apps. Skilled in Agile testing, JIRA,
+            and expanding into frontend development with React and Next.js.
           </p>
         </motion.div>
       </div>
