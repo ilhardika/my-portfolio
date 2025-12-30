@@ -18,7 +18,7 @@ const projects = [
     title: "Erp (On Going)",
     desc: "a unified ERP and POS solution that streamlines business operations through a single, intuitive dashboard. Built with modern web technologies, it offers role-based access control and comprehensive business management features.",
     tech: ["Tailwind", "Next.js", "NeonDB"],
-    link: "https://erpindo.vercel.app/login",
+    link: "https://erpindo.vercel.app/",
     github: "https://github.com/ilhardika/erpindo",
   },
   {
