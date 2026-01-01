@@ -3,6 +3,7 @@ import coverTravapp from "~/cover-travapp.png";
 import coverCompressly from "~/cover-compressly.png";
 import coverLp from "~/cover-lp.png";
 import coverErp from "~/cover-erp.png";
+import coverSanori from "~/cover-sanori.png";
 
 const projects = [
   {
@@ -20,6 +21,14 @@ const projects = [
     tech: ["Tailwind", "Next.js", "NeonDB"],
     link: "https://erpindo.vercel.app/",
     github: "https://github.com/ilhardika/erpindo",
+  },
+  {
+    image: coverSanori,
+    title: "Sanori Website",
+    desc: "A SAAS web application built with React and Vite that allows users to compress images. Built with React, Bootstrap, and Vite. with Image Preview, Compress, Download, and Share features.",
+    tech: ["Wordpress"],
+    link: "https://sbcsanori.com/",
+    github: "#",
   },
   {
     image: coverCompressly,
