@@ -10,8 +10,23 @@
   @apply hidden gap-10 md:flex;
 }
 
-.navbar-social {
-  @apply hidden gap-5 md:flex;
+.navbar-cv-button {
+  @apply flex items-center gap-2 px-4 py-2 md:px-6 md:py-2.5 rounded-lg
+  bg-gradient-to-r from-blue-600 to-purple-600
+  hover:from-blue-700 hover:to-purple-700
+  transition-all duration-300
+  font-semibold text-white text-sm md:text-base
+  shadow-lg hover:shadow-xl;
+}
+
+.navbar-cv-button-mobile {
+  @apply flex items-center gap-2 px-5 py-2 rounded-lg
+  bg-gradient-to-r from-blue-600 to-purple-600
+  hover:from-blue-700 hover:to-purple-700
+  transition-all duration-300
+  font-medium text-white text-sm
+  shadow-lg hover:shadow-xl
+  mt-4 w-fit;
 }
 
 .navbar-menu-icon {

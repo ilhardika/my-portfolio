@@ -1,0 +1,269 @@
+/* Responsive Grid Container */
+.work-scroll-container {
+  @apply w-full;
+}
+
+/* Responsive Grid Layout */
+.work-bento-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+/* Work Card - Banner Style */
+.work-card {
+  @apply w-full bg-white dark:bg-gray-800 rounded-2xl 
+  shadow-lg hover:shadow-2xl transition-all duration-300 
+  cursor-pointer overflow-hidden border border-gray-200 dark:border-gray-700
+  hover:scale-[1.02] hover:border-blue-400 dark:hover:border-purple-500
+  flex flex-col;
+}
+
+/* Banner Header - Full Logo as Background */
+.work-card-banner {
+  @apply h-48 sm:h-52 md:h-56 relative overflow-hidden;
+  background: transparent;
+}
+
+.work-banner-logo {
+  @apply w-full h-full object-cover;
+}
+
+.work-banner-placeholder {
+  @apply w-full h-full flex items-center justify-center
+  text-gray-400 dark:text-gray-500 bg-gray-100 dark:bg-gray-800;
+}
+
+.work-card-content {
+  @apply p-5 sm:p-6 flex-1 flex flex-col gap-2.5 sm:gap-3;
+}
+
+.work-type-badge {
+  @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full
+  bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300
+  text-xs font-medium w-fit;
+}
+
+.work-position {
+  @apply text-base sm:text-lg md:text-xl font-bold text-gray-800 dark:text-white
+  line-clamp-2;
+}
+
+.work-company {
+  @apply text-sm sm:text-base font-semibold text-blue-600 dark:text-purple-400
+  line-clamp-1;
+}
+
+.work-period {
+  @apply flex items-center gap-2 text-xs sm:text-sm text-gray-600 dark:text-gray-400;
+}
+
+.work-short-desc {
+  @apply text-xs sm:text-sm text-gray-600 dark:text-gray-300 line-clamp-3 mt-1;
+}
+
+.work-view-btn {
+  @apply mt-auto pt-3 text-sm font-medium text-blue-600 dark:text-purple-400
+  hover:text-blue-700 dark:hover:text-purple-300 transition-colors text-left
+  border-t border-gray-200 dark:border-gray-700;
+}
+
+/* Modal Styles */
+.work-modal-overlay {
+  @apply fixed inset-0 bg-black/60 backdrop-blur-sm z-50 
+  flex items-center justify-center p-4
+  animate-fade-in;
+}
+
+.work-modal-content {
+  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-2xl 
+  max-w-3xl w-full max-h-[90vh] overflow-y-auto
+  relative animate-slide-up;
+}
+
+.work-modal-close {
+  @apply absolute top-4 right-4 p-3 sm:p-2 rounded-full
+  bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600
+  text-gray-700 dark:text-gray-300 transition-colors z-10
+  touch-manipulation;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-modal-header {
+  @apply p-6 sm:p-8 md:p-10
+  border-b border-gray-200 dark:border-gray-700
+  relative overflow-hidden;
+}
+
+/* Blurred Banner Background */
+.work-modal-header::before {
+  content: '';
+  @apply absolute inset-0 z-0;
+  background-image: var(--modal-banner-bg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px);
+  opacity: 0.3;
+}
+
+/* Dark overlay for better text readability */
+.work-modal-header::after {
+  content: '';
+  @apply absolute inset-0 z-0 bg-gradient-to-b from-black/40 to-black/60;
+}
+
+.work-modal-logo-container {
+  display: none;
+}
+
+.work-modal-logo {
+  display: none;
+}
+
+.work-modal-logo-placeholder {
+  display: none;
+}
+
+.work-modal-title {
+  @apply w-full relative z-10;
+}
+
+.work-modal-position {
+  @apply text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2 drop-shadow-lg;
+}
+
+.work-modal-company {
+  @apply text-lg sm:text-xl md:text-2xl font-semibold text-white/90 mb-3 drop-shadow-md;
+}
+
+.work-modal-period {
+  @apply flex items-center gap-2 text-white/80 drop-shadow-md;
+}
+
+.work-modal-body {
+  @apply p-8 space-y-8;
+}
+
+.work-section {
+  @apply space-y-4;
+}
+
+.work-section-title {
+  @apply text-xl font-bold text-gray-800 dark:text-white
+  border-b-2 border-blue-500 dark:border-purple-500 pb-2 mb-4;
+}
+
+.work-responsibilities-list {
+  @apply space-y-3;
+}
+
+.work-responsibility-item {
+  @apply text-gray-700 dark:text-gray-300 pl-6 relative
+  before:content-['•'] before:absolute before:left-0 before:text-blue-600 
+  dark:before:text-purple-400 before:font-bold before:text-lg;
+}
+
+.work-achievements-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.work-achievement-item {
+  @apply flex items-start gap-3 p-4 bg-blue-50 dark:bg-gray-700 
+  rounded-lg border border-blue-200 dark:border-gray-600;
+}
+
+.work-achievement-icon {
+  @apply text-blue-600 dark:text-purple-400 flex-shrink-0 mt-1;
+}
+
+.work-achievement-item span {
+  @apply text-sm text-gray-700 dark:text-gray-300;
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+  .work-bento-grid {
+    @apply gap-4;
+  }
+
+  .work-card-banner {
+    @apply h-40;
+  }
+
+  .work-card-content {
+    @apply p-4 gap-2;
+  }
+
+  .work-position {
+    @apply text-sm;
+  }
+
+  .work-company {
+    @apply text-xs;
+  }
+
+  .work-modal-content {
+    @apply max-h-[90vh] mx-2;
+  }
+
+  .work-modal-header {
+    @apply p-6;
+  }
+
+  .work-modal-body {
+    @apply p-4 space-y-6;
+  }
+
+  .work-modal-position {
+    @apply text-xl;
+  }
+
+  .work-modal-company {
+    @apply text-lg;
+  }
+
+  .work-achievements-grid {
+    @apply grid-cols-1;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .work-bento-grid {
+    @apply grid-cols-1;
+  }
+
+  .work-achievements-grid {
+    @apply grid-cols-1;
+  }
+}

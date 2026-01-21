@@ -1,8 +1,9 @@
 import Background from "@/Background";
 import Navbar from "@/Navbar";
 import Hero from "@/Hero";
-import Tech from "@/Tech";
-import Project from "@/Project";
+import Skill from "@/Tech";
+import Education from "@/Education";
+import Work from "@/Work";
 import Contact from "@/Contact";
 import "./index.css";
 
@@ -14,8 +15,9 @@ function App() {
       <main className="main-section">
         <Navbar />
         <Hero />
-        <Tech />
-        <Project />
+        <Skill />
+        <Education />
+        <Work />
         <Contact />
       </main>
     </>

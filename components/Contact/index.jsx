@@ -2,10 +2,8 @@ import "./style.css";
 import { socialList } from "@/data/SocialIcons";
 
 const Contact = () => {
-  // gmail & wa
-  const filteredSocialList = socialList.filter((item) =>
-    ["gmail", "whatsapp"].includes(item.name)
-  );
+  // All social icons: gmail, whatsapp, linkedin, github
+  const filteredSocialList = socialList;
 
   return (
     <div id="contact" className="contact-container">

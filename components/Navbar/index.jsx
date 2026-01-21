@@ -1,11 +1,10 @@
 import "./style.css";
 import NavItems from "@/NavItems";
-import SocialIcons from "@/SocialIcons";
 import { useState } from "react";
 import { BiX } from "react-icons/bi";
 import { BiMenu } from "react-icons/bi";
+import { HiDownload } from "react-icons/hi";
 import { navItemsList } from "@/data/NavItems";
-import { socialList } from "@/data/SocialIcons";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,11 +12,6 @@ const Navbar = () => {
   const menuOpen = () => {
     setIsOpen(!isOpen);
   };
-
-  // LinkedIn dan GitHub
-  const filteredSocialList = socialList.filter((item) =>
-    ["linkedin", "github"].includes(item.name)
-  );
 
   return (
     <nav className="navbar">
@@ -29,9 +23,14 @@ const Navbar = () => {
         <NavItems navItems={navItemsList} />
       </ul>
 
-      <ul className="navbar-social hidden gap-5 md:flex">
-        <SocialIcons socialItems={filteredSocialList} />
-      </ul>
+      <a
+        href="/components/data/Ilham Hardika Resume.pdf"
+        download="Ilham_Hardika_Resume.pdf"
+        className="navbar-cv-button hidden md:flex"
+      >
+        <HiDownload className="w-5 h-5" />
+        <span>Get CV</span>
+      </a>
 
       {isOpen ? (
         <BiX className="navbar-menu-icon block md:hidden" onClick={menuOpen} />
@@ -48,9 +47,14 @@ const Navbar = () => {
             <NavItems navItems={navItemsList} />
           </ul>
 
-          <ul className="navbar-social flex gap-5">
-            <SocialIcons socialItems={filteredSocialList} />
-          </ul>
+          <a
+            href="/components/data/Ilham Hardika Resume.pdf"
+            download="Ilham_Hardika_Resume.pdf"
+            className="navbar-cv-button-mobile"
+          >
+            <HiDownload className="w-5 h-5" />
+            <span>Get CV</span>
+          </a>
         </div>
       )}
     </nav>

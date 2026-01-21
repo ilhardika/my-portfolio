@@ -21,11 +21,9 @@ const Hero = () => {
           className="hero-text-container"
         >
           <h1 className="hero-title">Ilham Hardika</h1>
-          <h3 className="hero-subtitle">Front-end | Quality Assurance</h3>
+          <h3 className="hero-subtitle">Quality Assurance</h3>
           <p className="hero-description">
-            QA Tester with 2 years of experience at Allianz, ensuring
-            high-quality mobile and web apps. Skilled in Agile testing, JIRA,
-            and expanding into frontend development with React and Next.js.
+            QA Tester with 2+ years experience in manual & automation testing. Passionate about ensuring quality and continuous learning.
           </p>
         </motion.div>
       </div>

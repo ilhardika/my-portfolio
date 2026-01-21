@@ -1,0 +1,104 @@
+.education-container {
+  @apply w-full py-12 md:py-16;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.education-header {
+  @apply text-2xl md:text-4xl font-bold text-center mb-12 md:mb-16
+  bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+  width: 100%;
+}
+
+/* Timeline Container - Stick to Left */
+.education-timeline {
+  @apply relative;
+  max-width: 100% !important;
+  margin-left: 4rem !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+}
+
+/* Vertical Line - Left Side */
+.education-timeline::before {
+  content: '';
+  @apply absolute left-6 md:left-8 top-0 bottom-0 w-0.5 
+  bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500;
+}
+
+/* Timeline Item - Left Aligned with HUGE Spacing */
+.timeline-item {
+  position: relative !important;
+  padding-left: 4rem !important;
+  margin-bottom: 5rem !important;
+}
+
+@media (min-width: 768px) {
+  .timeline-item {
+    padding-left: 5rem !important;
+    margin-bottom: 5rem !important;
+  }
+}
+
+/* Timeline Icon - Circle on Line */
+.timeline-icon {
+  @apply absolute left-0 md:left-2 top-0
+  w-12 h-12 rounded-full 
+  bg-white dark:bg-gray-800
+  border-4 border-blue-500 dark:border-purple-500
+  flex items-center justify-center
+  text-blue-600 dark:text-purple-400
+  shadow-lg z-10;
+}
+
+/* Timeline Content - 3 Rows */
+.timeline-content {
+  @apply text-left;
+}
+
+.timeline-degree {
+  @apply text-base md:text-lg font-bold text-gray-800 dark:text-white mb-3;
+}
+
+.timeline-meta {
+  @apply text-sm md:text-base text-gray-500 dark:text-gray-400 mb-3;
+}
+
+.timeline-details {
+  @apply text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed;
+}
+
+.timeline-period {
+  display: none;
+}
+
+.timeline-institution {
+  display: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+  .education-timeline {
+    margin-left: 0 !important;
+  }
+
+  .education-timeline::before {
+    @apply left-5;
+  }
+
+  .timeline-icon {
+    @apply w-10 h-10 left-0;
+  }
+
+  .timeline-content {
+    @apply p-4;
+  }
+
+  .timeline-degree {
+    @apply text-sm;
+  }
+
+  .timeline-institution {
+    @apply text-xs;
+  }
+}
