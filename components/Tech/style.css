@@ -8,7 +8,7 @@
 }
 
 .skills-grid {
-  @apply w-full max-w-5xl flex flex-col gap-8;
+  @apply w-full flex flex-col gap-8;
 }
 
 .skill-category {
